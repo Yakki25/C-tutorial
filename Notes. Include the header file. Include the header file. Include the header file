@@ -1,0 +1,165 @@
+1. Include the header file
+2. write the main function and write statements
+3. gcc filename.c to compile
+4. ./a.exe
+
+
+
+///////////////////////////////////////////////////////////////
+5 + 6 
+expression: collection of operator and operands in meaning ful way to perform a logic
+operator:input that performs an opertion(As in above case + )
+operand: input on which an operation needed to be performed (As in above case 5,6)
+
+a*b=is a wrong expression
+
+Data can be basically  either variable or constant 
+(3.14
+9.8
+9*10^9
+5
+8) are all constant
+
+{student_name,my_age,salary} are all variables.
+Variables are such memory space the is assigned to take a particular data but the value of that data can differ
+1. name of variable can be anything but in general we should take a name that signifies the data for increased code readability
+for example use variable (t,T,temp,temperature) for temperature 
+Naming convention for variables
+a. Name of a variable can only contain uppercase, lowercase alphabets, numbers and underscore(_) ex. temp, temp1, temp_body1 
+ temp# ->wrong temp( ->wrong
+b. Name of a variable must start with alphabets and in special case(_) but cannot start with number ex. _temp, temp, Temp
+1temp=>wrong
+c. Name of a variable cannot contain spaces. ex tempbody1, temp_body1, temp_of_body
+ temp body 1 ->wrong
+d. variables in c are case sensitive ex: temp, Temp, tEMP, temP are all different variables
+e. variable must be declared before their use
+f. vaiables declaration syntax is datatype variable_name=value(optional)
+
+int num1;
+int num1=0;
+int v,a,T;
+int u=5;
+
+v=u+at
+
+Format specifiers are blankspace that declares the type of data to be handled
+
+integer %d
+float   %f
+long    %l
+double  %lf
+char    %c
+string  %s
+
+Escape sequences: Helpers to print some variable or constants in formatted way
+\n newline
+\t tab
+\0 terminate printing
+\r carriage return
+\b backspace
+
+Data Types: 
+Primitive Data Type(inbuilt)
+numeric
+int,float,double,long
+character 
+char
+boolean 
+bool
+
+Non Primitive(user defined)
+Array homogeneous [numeric,numeric,numeric]
+structure heterogeneous [numeric,character,boolean]
+union heterogeneous
+type casting
+
+/////////////////////////Operators///////////////////////////////////////////
+Operator: 
+1. Arithmetic operators(+,-,*,/,%,++,--) to perform mathematical operations
+2. Assignment operator(=,+=,*=,/=,^=,%=)
+3. relational operator (<,>,<=,>=,!=,==)
+4. logical operator (&&,||,!    )
+5. bitwise operation (<<,>>,|,&,~)
+
+Algorithm
+old_level=5
+loop start
+increment=1
+old_level+=increment    //old_level=old_level+increment
+repeat 10 times
+loop end
+print old_level
+
+x<<100101
+x>>100101
+x=110010
+
+
+/////////////////////////Conditional Statements//////////////////////////
+Scene 1. if with else
+We have to implement a toggle  button
+Description: Switch when pressed 2n-1 time then it changes 
+             state to on when it is pressed for 2n time then it changes state to off.
+
+Logic:
+            if(n%2==0){
+                switch is off
+            }else{
+                switch is on
+            }
+syntax:
+            if(condition){
+                statements
+                ...
+            }else{
+                statements
+                ...
+            }
+Conclusion: when true case should yield a result as well as the false case should also yield a result then we have to use 
+if...else
+
+Scene 2: Simple if
+We have to implement a case where when page is not found it should give a 404
+logic:
+    if(page==0){
+        send 404
+    }
+syntax: if(condition){
+    statements
+    ...
+}
+conclusion: When the program has to give an output only in true case
+
+Scene 3: Chained if
+We have to implement a system to add, subtract,multiply and divide numbers based on the given input
+Desciption: Develop a console based calculator
+
+logic and syntax:
+if(condition1){
+    operation1
+}else if(condition2){
+    operation2
+}else if(condition3){
+    operation3
+}
+...
+else{
+    default statements
+}
+
+Conclusion:We can use when we have to choose between multiple options and only option is correct
+
+Scene 4: Nested if
+We have to develop an AI system to recognise an apple based on shape,color and taste
+
+
+if(shape=="oval"){  //Check condition 1
+    if(color=="red"){  //check condition 2 if and only if condition 1 is satisfied
+        if(taste=="sweet"){ //check condition 3 if  and only if condition 1 and 2 are both correct
+            it is an apple
+        }
+    }
+}
+
+Conclusion: nested if is used when we have to make some program which will only execute if all the top level
+condition satisfies
